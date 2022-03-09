@@ -1,4 +1,4 @@
-# Note Application
+# Note App 📝
 
 
 ### `npm start`
