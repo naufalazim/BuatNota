@@ -12,11 +12,50 @@ code {
     monospace;
 }
 
+.container {
+  max-width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+
+}
+
 .notes-list {
   display: grid;
   grid-gap: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
+
+/* New Note:  */
+.note.new {
+  background-color: whitesmoke;
+}
+
+textarea {
+  border: none;
+  resize: none;
+  background-color: whitesmoke;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+.save {
+  background-color: wheat;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  justify-content: space-between;
+  margin-left: 10rem;
+}
+
+.save:hover {
+  background-color: yellow;
+  cursor: pointer;
+}
+
 
 .note {
   background-color: #EEC99C;
