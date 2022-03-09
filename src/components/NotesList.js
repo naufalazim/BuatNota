@@ -7,6 +7,7 @@ const NotesList = () => {
             <Note />
             <Note />
             <Note />
+            <Note />
         </div>
     )
 }
