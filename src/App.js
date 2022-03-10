@@ -25,7 +25,19 @@ const App = () => {
 ]);
 
   const addNote = (text) => {
-    console.log(text);
+    //setup date:
+    const date = new Date();
+
+    //elements in note:
+    const newNote = {
+      id: nanoid(),
+      text: text,
+      date: date.toLocaleDateString()
+    }
+
+    const newNotes = [...notes, newNote]; //List of new notes:
+    setNotes(newNotes); //update with new data
+
   }
 
 
