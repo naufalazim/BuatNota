@@ -24,6 +24,7 @@ const App = () => {
 
 ]);
 
+// ADD NOTE FUNCTION:
   const addNote = (text) => {
     //setup date:
     const date = new Date();
@@ -37,13 +38,23 @@ const App = () => {
 
     const newNotes = [...notes, newNote]; //List of new notes:
     setNotes(newNotes); //update with new data
+  }
 
+
+// DELETE NOTE FUNCTION:
+  const deleteNote = (id) => {
+    const newNotes =  notes.filter( (note) => note.id !== id);
+    setNotes(newNotes);
   }
 
 
   return(
     <div className="container">
-      <NotesList notes={notes} handleAddNote={addNote} />
+      <NotesList 
+      notes={notes} 
+      handleAddNote={addNote}
+      handleDeleteNote = {deleteNote}
+       />
     </div>
   )
 }

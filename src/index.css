@@ -73,3 +73,8 @@ textarea:focus {
   display: flex;
   align-items: center;
 }
+
+.delete-icon {
+  cursor: pointer;
+  
+}
