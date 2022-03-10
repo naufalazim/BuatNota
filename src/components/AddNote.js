@@ -6,14 +6,25 @@ const AddNote = ({handleAddNote}) => {
     //Usestate for new note:
     const [ noteText, setNoteText ] = useState('');
 
+    //for character limit:
+    const characterLimit = 200;
+
     //detect user typing
     const handleChange = (event) => {
-        setNoteText(event.target.value);
+        if(characterLimit - event.target.value.length >=0){
+            setNoteText(event.target.value);
+        } //limitation character
+       
     }
 
     //user click button"
     const handleSaveClick = () => {
-        handleAddNote(noteText);
+        //prevent save from empty!
+        if(noteText.trim().length > 0) {
+            handleAddNote(noteText);
+            setNoteText('');
+        }
+        
     }
     
     return(
@@ -26,7 +37,7 @@ const AddNote = ({handleAddNote}) => {
                 onChange={handleChange}
             ></textarea>
             <div className="note-footer">
-                <small>140 remaining</small>
+                <small>{characterLimit - noteText.length} remaining</small>
                 <button className="save" onClick={handleSaveClick}>Save</button>
             </div>
         </div>
