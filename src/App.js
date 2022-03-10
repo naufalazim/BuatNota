@@ -2,16 +2,20 @@ import { nanoid } from "nanoid";
 import { useState } from "react";
 import NotesList from "./components/NotesList";
 
+
 const App = () => {
   const [notes, setNotes] = useState([
     {
     id: nanoid(),
-    text: "This is the note!",
-    date: "15/05/2021"
+    text: "Ini adalah contoh nota!",
+    date: "15/05/2022"
   },
 
-
 ]);
+
+//SEARCH FUNCTIONS:
+
+
 
 // ADD NOTE FUNCTION:
   const addNote = (text) => {
@@ -24,7 +28,6 @@ const App = () => {
       text: text,
       date: date.toLocaleDateString()
     }
-
     const newNotes = [...notes, newNote]; //List of new notes:
     setNotes(newNotes); //update with new data
   }
@@ -37,8 +40,11 @@ const App = () => {
   }
 
 
+
   return(
     <div className="container">
+
+      <h1 className="title">Buat Nota</h1>
       <NotesList 
       notes={notes} 
       handleAddNote={addNote}

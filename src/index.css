@@ -6,11 +6,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background-color: RGB(233, 230, 225);
+  background-color: whitesmoke;
   font-family: 'Proza Libre', sans-serif; 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Proza+Libre&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Proza+Libre&display=swap');
 /* 
 font-family: 'Cormorant Garamond', serif;
 font-family: 'Proza Libre', sans-serif; 
@@ -22,8 +22,10 @@ code {
 }
 
 /* Font
-Cormorant Garamond (title)
-Proza Libre */
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Proza Libre', sans-serif;
+*/
+
 
 .container {
   max-width: 960px;
@@ -31,6 +33,12 @@ Proza Libre */
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
+}
+
+.title {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 700;
+  font-size: 58px;
 }
 
 .notes-list {
@@ -102,3 +110,23 @@ button.save {
   position: relative;
   left: 10em;
 }
+
+/* PART: SEARCH  */
+/* .search {
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+  
+}
+
+.search input {
+  border: none;
+  background-color: bisque ;
+}
+
+.search input:focus {
+  outline: none;
+} */
