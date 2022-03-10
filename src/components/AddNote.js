@@ -1,14 +1,19 @@
 import { useState } from "react";
 
-//35.31
-const AddNote = () => {
+
+const AddNote = ({handleAddNote}) => {
 
     //Usestate for new note:
     const [ noteText, setNoteText ] = useState('');
 
     //detect user typing
     const handleChange = (event) => {
-        console.log(event.target.value);
+        setNoteText(event.target.value);
+    }
+
+    //user click button"
+    const handleSaveClick = () => {
+        handleAddNote(noteText);
     }
     
     return(
@@ -17,11 +22,12 @@ const AddNote = () => {
                 rows='8'
                 cols='10'
                 placeholder='Tulis nota sini...'
+                value={noteText}
                 onChange={handleChange}
             ></textarea>
             <div className="note-footer">
                 <small>140 remaining</small>
-                <button className="save">Save</button>
+                <button className="save" onClick={handleSaveClick}>Save</button>
             </div>
         </div>
     )
