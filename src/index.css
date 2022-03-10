@@ -5,12 +5,25 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background-color: RGB(233, 230, 225);
+  font-family: 'Proza Libre', sans-serif; 
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Proza+Libre&display=swap');
+/* 
+font-family: 'Cormorant Garamond', serif;
+font-family: 'Proza Libre', sans-serif; 
+*/
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Font
+Cormorant Garamond (title)
+Proza Libre */
 
 .container {
   max-width: 960px;
@@ -18,7 +31,6 @@ code {
   margin-left: auto;
   padding-right: 15px;
   padding-left: 15px;
-
 }
 
 .notes-list {
@@ -29,36 +41,47 @@ code {
 
 /* New Note:  */
 .note.new {
-  background-color: whitesmoke;
+  background-color: #f9c74f;
+  font-weight: bold;
+  
 }
 
 textarea {
   border: none;
   resize: none;
-  background-color: whitesmoke;
+  background-color: #f9c74f;
 }
 
 textarea:focus {
   outline: none;
 }
 
+
+
+/* PART: BUTTON  */
+button.save {
+  position: relative;
+  left: 10em;
+}
+
 .save {
-  background-color: wheat;
+  background-color: #81b29a;
   border: none;
+  font-weight: bold;
   border-radius: 15px;
   padding: 5px 10px;
   justify-content: space-between;
-  margin-left: 10rem;
+  position: relative;
 }
 
 .save:hover {
-  background-color: yellow;
+  background-color: #e07a5f;
   cursor: pointer;
 }
 
-
 .note {
-  background-color: #EEC99C;
+  background-color: #ffbe0b;
+  color: RGB(33, 29, 30);
   margin-bottom: 10px;
   border-radius: 10px;
   padding: 1rem;
@@ -76,5 +99,6 @@ textarea:focus {
 
 .delete-icon {
   cursor: pointer;
-  
+  position: relative;
+  left: 10em;
 }
