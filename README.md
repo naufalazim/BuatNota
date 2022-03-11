@@ -1,5 +1,10 @@
 # Note App 📝
 
+### `image`
+
+<img src="https://github.com/naufalazim/note-app/blob/main/img/app.png" width=50% height=50%>
+
+
 <p>"Buat nota" means create note in malay language 🇲🇾</p>
 
 ### `npm start`
