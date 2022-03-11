@@ -2,6 +2,7 @@ import { nanoid } from "nanoid";
 import { useState } from "react";
 import NotesList from "./components/NotesList";
 import Header from "./components/Header";
+import Search from "./components/Search";
 
 
 const App = () => {
@@ -9,7 +10,7 @@ const App = () => {
 
     {
     id: nanoid(),
-    text: "Buat nota 🇲🇾",
+    text: "Sample note. 🇲🇾",
     date: "15/05/2022"
   },
 
@@ -54,8 +55,11 @@ const App = () => {
   return(
     <div>
         <div className="container">
+
         <Header />
         
+        <Search />
+
         <NotesList 
         notes={notes} 
         handleAddNote={addNote}

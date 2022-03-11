@@ -47,14 +47,6 @@ code {
 
 /* PART: DARK MODE  */
 
-.dark-mode {
-  background-color: #023047 ;
-}
-
-.dark-mode h1 {
-  color: whitesmoke;
-}
-
 
 .notes-list {
   display: grid;
@@ -126,8 +118,35 @@ button.save {
   left: 10em;
 }
 
+
 /* PART: SEARCH  */
-/* .search {
+
+.search {
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 1.5em;
+}
+
+.search input {
+  border: 2px solid #e9d8a6;
+  border-radius: 10px;
+  background-color: none ;
+  background-color: none;
+  width: 100%;
+  padding: 10px 20px;
+  margin: 1px 0;
+  box-sizing: border-box;
+}
+
+.search input:focus {
+  outline: none;
+} 
+
+/* 
+
+.search {
   display: flex;
   align-items: center;
   background-color: bisque;
