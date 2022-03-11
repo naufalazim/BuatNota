@@ -1,7 +1,6 @@
 # Note App 📝
 
 ### 'image'
-![alt text](https://github.com/naufalazim/note-app/blob/main/img/app.png | width=250)
 
 <img src="https://github.com/naufalazim/note-app/blob/main/img/app.png" width=50% height=50%>
 
