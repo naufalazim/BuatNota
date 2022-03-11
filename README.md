@@ -1,7 +1,7 @@
 # Note App 📝
 
 ### 'image'
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/naufalazim/note-app/blob/main/img/app.png)
 
 
 <p>"Buat nota" means create note in malay language 🇲🇾</p>
