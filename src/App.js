@@ -23,7 +23,7 @@ const App = () => {
 ]);
 
 //SEARCH FUNCTIONS:
-
+const [search, setSearch] = useState('');
 
 //DARK MODE FUNCTIONS: Default turn off 
 
@@ -58,10 +58,12 @@ const App = () => {
 
         <Header />
         
-        <Search />
+        <Search 
+          handleSearchNote = {setSearch}
+        />
 
         <NotesList 
-        notes={notes} 
+        notes={notes.filter( (e) => e.text.toLowerCase().includes(search))} 
         handleAddNote={addNote}
         handleDeleteNote = {deleteNote}
         />

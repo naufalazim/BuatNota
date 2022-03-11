@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const Search = () => {
+const Search = ({handleSearchNote}) => {
     return(
         <div className="search">
             <form>
@@ -8,6 +8,7 @@ const Search = () => {
                 type="text"  
                 className="form-control" 
                 placeholder="search here..." 
+                onChange={(e) => handleSearchNote(e.target.value)}
                 autoFocus 
                 />
             </form>
