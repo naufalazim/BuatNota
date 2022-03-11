@@ -1,13 +1,21 @@
 import { nanoid } from "nanoid";
 import { useState } from "react";
 import NotesList from "./components/NotesList";
+import Header from "./components/Header";
 
 
 const App = () => {
   const [notes, setNotes] = useState([
+
     {
     id: nanoid(),
-    text: "Ini adalah contoh nota!",
+    text: "Buat nota 🇲🇾",
+    date: "15/05/2022"
+  },
+
+  {
+    id: nanoid(),
+    text: "'The way to get started is to quit talking and begin doing.' - Walt Disney",
     date: "15/05/2022"
   },
 
@@ -15,6 +23,8 @@ const App = () => {
 
 //SEARCH FUNCTIONS:
 
+
+//DARK MODE FUNCTIONS: Default turn off 
 
 
 // ADD NOTE FUNCTION:
@@ -42,14 +52,16 @@ const App = () => {
 
 
   return(
-    <div className="container">
-
-      <h1 className="title">Buat Nota</h1>
-      <NotesList 
-      notes={notes} 
-      handleAddNote={addNote}
-      handleDeleteNote = {deleteNote}
-       />
+    <div>
+        <div className="container">
+        <Header />
+        
+        <NotesList 
+        notes={notes} 
+        handleAddNote={addNote}
+        handleDeleteNote = {deleteNote}
+        />
+      </div>
     </div>
   )
 }

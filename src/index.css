@@ -21,11 +21,6 @@ code {
     monospace;
 }
 
-/* Font
-font-family: 'Cormorant Garamond', serif;
-font-family: 'Proza Libre', sans-serif;
-*/
-
 
 .container {
   max-width: 960px;
@@ -35,11 +30,31 @@ font-family: 'Proza Libre', sans-serif;
   padding-left: 15px;
 }
 
-.title {
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.header h1 {
   font-family: 'Cormorant Garamond', serif;
   font-weight: 700;
   font-size: 58px;
 }
+
+
+/* PART: DARK MODE  */
+
+.dark-mode {
+  background-color: #023047 ;
+}
+
+.dark-mode h1 {
+  color: whitesmoke;
+}
+
 
 .notes-list {
   display: grid;
