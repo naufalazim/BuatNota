@@ -1,5 +1,6 @@
 # Note App 📝
 
+<p>"Buat nota" means create note in malay language 🇲🇾</p>
 
 ### `npm start`
 
