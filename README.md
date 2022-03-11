@@ -1,5 +1,9 @@
 # Note App 📝
 
+### 'image'
+![alt text](http://url/to/img.png)
+
+
 <p>"Buat nota" means create note in malay language 🇲🇾</p>
 
 ### `npm start`
