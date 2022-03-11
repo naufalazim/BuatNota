@@ -1,6 +1,6 @@
 # Note App 📝
 
-### 'image'
+### `image`
 
 <img src="https://github.com/naufalazim/note-app/blob/main/img/app.png" width=50% height=50%>
 
