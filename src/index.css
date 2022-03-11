@@ -144,23 +144,11 @@ button.save {
   outline: none;
 } 
 
-/* 
-
-.search {
-  display: flex;
-  align-items: center;
-  background-color: bisque;
-  border-radius: 10px;
-  padding: 5px;
-  margin-bottom: 1.5em;
-  
+/* PART: NAUFAL AZIM  */
+.owner {
+  font-family: 'Proza Libre', sans-serif;
 }
 
-.search input {
-  border: none;
-  background-color: bisque ;
+.owner a {
+  color: #bb3e03;
 }
-
-.search input:focus {
-  outline: none;
-} */
